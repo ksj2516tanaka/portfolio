@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SORA COFFEE</title>
+  <meta name="description" content="日常のすきまに、静かな一杯を。熊本の住宅街に佇む、自家焙煎珈琲と焼き菓子のローカルカフェ。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Nothing+You+Could+Do&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="SORA COFFEE">
+        <svg class="logo-svg logo-header" viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="110" y="38" text-anchor="middle" class="logo-sora">SORA</text>
+          <text x="112" y="62" text-anchor="middle" class="logo-coffee">C O F F E E</text>
+        </svg>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#sweets">Sweets</a>
+        <a href="#space">Space</a>
+        <a href="#access">Access</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="#" class="insta-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="#2f241d" stroke-width="1.6" />
+            <circle cx="12" cy="12" r="4.2" stroke="#2f241d" stroke-width="1.6" />
+            <circle cx="17.5" cy="6.5" r="1.2" fill="#2f241d" />
+          </svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80"
+          alt="SORA COFFEEのイメージ" />
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-inner reveal">
+        <div class="hero-kicker">KUMAMOTO / LOCAL ROASTERY CAFE</div>
+
+        <div class="hero-logo-wrap">
+          <svg class="logo-svg logo-hero" viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="160" y="62" text-anchor="middle" class="logo-sora hero-sora">SORA</text>
+            <text x="164" y="95" text-anchor="middle" class="logo-coffee hero-coffee">C O F F E E</text>
+          </svg>
+        </div>
+
+        <p class="hero-copy">日常のすきまに、静かな一杯を。</p>
+        <p class="hero-subcopy">
+          熊本の住宅街に佇む、自家焙煎珈琲と焼き菓子のローカルカフェ。<br>
+          やわらかな光と木のぬくもりの中で、心ほどける時間を届けます。
+        </p>
+        <div class="btn-row hero-btn-row">
+          <a href="#access" class="btn btn-secondary">Accessを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split-grid">
+        <div class="image-card about-image reveal">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80"
+            alt="店内の雰囲気" />
+        </div>
+
+        <div class="text-block reveal">
+          <span class="section-kicker">About</span>
+          <h2 class="section-script">About</h2>
+          <h3 class="section-title">やわらかな光と、静かな時間。</h3>
+          <p>
+            SORA COFFEE は、熊本の住宅街にある自家焙煎カフェです。<br>
+            木のぬくもりと自然光に包まれた空間で、日常のすきまにそっと寄り添う一杯を届けています。
+          </p>
+          <p>
+            にぎやかさから少し離れて、ひとりで過ごす午後にも、<br>
+            大切な人とゆっくり話したい日にも、自然体でいられる場所を目指しています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coffee">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Coffee</span>
+          <h2 class="section-script">Coffee</h2>
+          <h3 class="section-title">Roasted with care</h3>
+          <p class="section-desc">
+            豆の個性を引き出すために、一杯ずつ丁寧に向き合いながら自家焙煎しています。<br>
+            香り、苦み、やわらかな余韻まで、静かな時間に寄り添う味わいを目指しました。
+          </p>
+        </div>
+
+        <div class="coffee-grid">
+          <article class="coffee-card reveal">
+            <div class="coffee-thumb">
+              <img class="coffee-img coffee-img-1"
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                alt="自家焙煎" />
+            </div>
+            <h3>自家焙煎</h3>
+            <p>豆の香りと個性を大切にしながら、丁寧に焙煎しています。</p>
+          </article>
+
+          <article class="coffee-card reveal">
+            <div class="coffee-thumb">
+              <img class="coffee-img coffee-img-2"
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80"
+                alt="香りと余韻" />
+            </div>
+            <h3>香りと余韻</h3>
+            <p>やわらかな口あたりと、静かに広がる余韻を楽しめる一杯。</p>
+          </article>
+
+          <article class="coffee-card reveal">
+            <div class="coffee-thumb">
+              <img class="coffee-img coffee-img-3"
+                src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=800&q=80"
+                alt="おすすめの一杯" />
+            </div>
+            <h3>おすすめの一杯</h3>
+            <p>その日の気分や季節に合わせて、ぴったりの味わいをご提案します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sweets">
+      <div class="container split-grid sweets-grid">
+        <div class="text-block reveal">
+          <span class="section-kicker">Sweets</span>
+          <h2 class="section-script">Sweets</h2>
+          <h3 class="section-title">Coffee with a small delight.</h3>
+          <p>
+            地元の素材を使った焼き菓子を、珈琲に合うやさしい味わいでご用意しています。<br>
+            その日の気分に合わせて、一杯とひとつの小さな楽しみを。
+          </p>
+          <p>
+            甘さを控えた素朴な焼き菓子は、コーヒーの香りを引き立てながら、<br>
+            ゆっくり過ごす時間にそっと寄り添います。
+          </p>
+        </div>
+
+        <div class="sweets-image reveal">
+          <div class="image-card sweets-card">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1200&q=80"
+              alt="焼き菓子" />
+          </div>
+          <div class="image-card sweets-card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=80"
+              alt="コーヒーとスイーツ" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="space">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Space</span>
+          <h2 class="section-script">Space</h2>
+          <h3 class="section-title">木のぬくもりと、静かに流れる時間。</h3>
+          <p class="section-desc">
+            窓から差し込むやわらかな光、木と緑に包まれた落ち着いた空間。<br>
+            ひとりで過ごす午後にも、友人とゆっくり話したい日にも、自然体でいられる場所を目指しています。
+          </p>
+        </div>
+
+        <div class="space-gallery">
+          <div class="image-card reveal">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80"
+              alt="店内全景" />
+          </div>
+          <div class="image-card reveal">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=80"
+              alt="窓辺の席" />
+          </div>
+          <div class="image-card reveal">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80"
+              alt="カウンター席" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="access">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Access</span>
+          <h2 class="section-script">Access</h2>
+          <h3 class="section-title">Find your quiet corner in Kumamoto.</h3>
+        </div>
+
+        <div class="access-grid">
+          <div class="info-card reveal">
+            <ul class="info-list">
+              <li>
+                <strong>住所</strong>
+                <span>熊本県〇〇市〇〇町 1-2-3</span>
+              </li>
+              <li>
+                <strong>営業時間</strong>
+                <span>10:00 - 18:00</span>
+              </li>
+              <li>
+                <strong>定休日</strong>
+                <span>水曜日</span>
+              </li>
+              <li>
+                <strong>駐車場</strong>
+                <span>あり</span>
+              </li>
+              <li>
+                <strong>Instagram</strong>
+                <span>@sora_coffee</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-card reveal map-visual">
+            <div class="map-pin"></div>
+            <div class="map-ring map-ring-1"></div>
+            <div class="map-ring map-ring-2"></div>
+            <div class="map-ring map-ring-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container">
+        <div class="final-cta-box reveal">
+          <h2>日常のすきまに、静かな一杯を。</h2>
+          <p>
+            今日の気分に合う一杯を探しに、ぜひお立ち寄りください。<br>
+            アクセス情報や最新のお知らせは、下記からご覧いただけます。
+          </p>
+          <div class="btn-row">
+            <a href="#access" class="btn btn-primary">Accessを見る</a>
+            <a href="#" class="btn btn-outline">Instagramを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="logo" aria-label="SORA COFFEE">
+          <svg class="logo-svg logo-footer" viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <text x="110" y="38" text-anchor="middle" class="logo-sora">SORA</text>
+            <text x="112" y="62" text-anchor="middle" class="logo-coffee">C O F F E E</text>
+          </svg>
+        </a>
+        <p>日常のすきまに、静かな一杯を。</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#sweets">Sweets</a>
+        <a href="#space">Space</a>
+        <a href="#access">Access</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

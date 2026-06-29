@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanaka Kisora — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9.144,300;0,9.144,400;1,9.144,300;1,9.144,700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="loading">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pre-count" id="preCount">00</div>
+    <div class="pre-label">Loading Portfolio</div>
+    <div class="pre-bar-wrap">
+      <div class="pre-bar" id="preBar"></div>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <div class="nav-logo">T·K — Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle">Light / Dark</button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bar"></div>
+    <div class="hero-meta">
+      <span class="hero-meta-item">Portfolio</span>
+      <div class="mdot"></div>
+      <span class="hero-meta-item">2026</span>
+      <div class="mdot"></div>
+      <span class="hero-meta-item">Web Design &amp; Photography</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span class="hero-name-top">TANAKA KISORA</span>
+      <span class="hero-name-bot">Portfolio</span>
+    </h1>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-frame">
+        <img src="images/hero-photo.jpg" alt="" />
+      </div>
+    </div>
+    </div>
+    <div class="hero-footer">
+      <p class="hero-desc">
+        Webデザインと写真表現を学びながら<br>見る人の印象に残る表現を目指しています。<br />
+        Student in Kumamoto, Japan
+      </p>
+      <a href="#works" class="hero-cta">
+        <span>View Selected Works</span>
+        <span class="arr">→</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="mq-item">Web Design</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Photography</span><span class="mq-sep">✦</span>
+      <span class="mq-item">UI Design</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Figma</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Kumamoto</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Web Marketing</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Illustrator</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Photoshop</span><span class="mq-sep">✦</span>
+
+      <span class="mq-item">Web Design</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Photography</span><span class="mq-sep">✦</span>
+      <span class="mq-item">UI Design</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Figma</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Kumamoto</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Web Marketing</span><span class="mq-sep">✦</span>
+      <span class="mq-item">Illustrator</span><span class="mq-sep">✦</span>
+      <span class="mq-item hi">Photoshop</span><span class="mq-sep">✦</span>
+    </div>
+  </div>
+
+  <section class="works" id="works">
+    <div class="works-header reveal">
+      <div>
+        <div class="eyebrow">01 — Works</div>
+        <h2 class="sec-title">Selected<br /><em>Projects</em></h2>
+      </div>
+
+      <div class="works-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Web</button>
+        <button class="filter-btn" data-filter="photo">Photo</button>
+        <button class="filter-btn" data-filter="illustration">Illustration</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+    </div>
+
+    <div class="works-grid">
+      <a class="work-item reveal" href="./works/sora-coffee/index.html">
+        <div class="work-bg">
+          <img src="images/sora-coffee.jpg" alt="SORA COFFEE website preview" />
+        </div>
+        <div class="work-overlay">
+          <div class="work-title">SORA COFFEE</div>
+          <div class="work-cat">架空案件 / Website</div>
+          <div class="work-desc">落ち着いた雰囲気と余白を意識して制作した、 <br>架空のカフェサイトです。</div>
+        </div>
+        <div class="work-num">01</div>
+      </a>
+
+      <a class="work-item reveal d2" href="./works/ART/index.html">
+        <div class="work-bg">
+          <img src="images/ART.jpg" alt="ART website preview" />
+        </div>
+        <div class="work-overlay">
+          <div class="work-title">ART</div>
+          <div class="work-cat">架空案件 / Website</div>
+          <div class="work-desc">タイポグラフィと構成で洗練された印象を目指した、 <br>母の美容室のサイトです。</div>
+        </div>
+        <div class="work-num">02</div>
+      </a>
+
+      <a class="work-item reveal d3" href="./works/camp/index.html">
+        <div class="work-bg">
+          <img src="./works/camp/images/camp.jpg" alt="ART website preview" />
+        </div>
+        <div class="work-overlay">
+          <div class="work-title">暮自然　キャンプ場</div>
+          <div class="work-cat">架空案件 / Website</div>
+          <div class="work-desc">自然の空気感が伝わるよう、 <br>写真とやわらかな世界観で構成したサイトです。</div>
+
+        </div>
+        <div class="work-num">03</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="photo-section" id="photoSection">
+    <div class="photo-cursor-label" id="photoCursorLabel">Explore</div>
+
+    <div class="photo-header reveal">
+      <div>
+        <div class="eyebrow">01.5 — Photography</div>
+        <h2 class="sec-title">Photo<br /><em>Gallery</em></h2>
+      </div>
+
+      <div class="section-header-actions">
+        <div class="photo-hint">Move cursor to scroll</div>
+        <button class="section-back-btn" id="photoBackBtn" type="button">Back to All</button>
+      </div>
+    </div>
+    <div class="photo-strip" id="photoStrip">
+      <div class="photo-thumb reveal">
+        <div class="photo-inner photo-01"></div>
+      </div>
+
+      <div class="photo-thumb reveal d1">
+        <div class="photo-inner photo-02"></div>
+      </div>
+
+      <div class="photo-thumb reveal d2">
+        <div class="photo-inner photo-03"></div>
+      </div>
+
+      <div class="photo-thumb reveal d3">
+        <div class="photo-inner photo-04"></div>
+      </div>
+
+      <div class="photo-thumb reveal">
+        <div class="photo-inner photo-05"></div>
+      </div>
+
+      <div class="photo-thumb reveal d1">
+        <div class="photo-inner photo-06"></div>
+      </div>
+
+      <div class="photo-thumb reveal d2">
+        <div class="photo-inner photo-07"></div>
+      </div>
+
+      <div class="photo-thumb reveal d3">
+        <div class="photo-inner photo-08"></div>
+      </div>
+
+      <div class="photo-thumb reveal">
+        <div class="photo-inner photo-09"></div>
+      </div>
+
+      <div class="photo-thumb reveal d1">
+        <div class="photo-inner photo-10"></div>
+      </div>
+
+      <div class="photo-thumb reveal d2">
+        <div class="photo-inner photo-11"></div>
+      </div>
+
+      <div class="photo-thumb reveal d3">
+        <div class="photo-inner photo-12"></div>
+      </div>
+
+    </div>
+    <div class="photo-progress-wrap">
+      <div class="photo-progress-bar" id="photoProgress"></div>
+    </div>
+  </section>
+  <section class="illustration-section" id="illustrationSection">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">01.6 — Illustration</div>
+        <h2 class="sec-title">Illustration<br /><em>Works</em></h2>
+      </div>
+
+      <div class="section-header-actions">
+        <button class="section-back-btn" id="illustrationBackBtn" type="button">Back to All</button>
+      </div>
+    </div>
+
+    <div class="art-grid">
+      <article class="art-card reveal">
+        <div class="art-media">
+          <img src="images/illustration-01.jpg" alt="Illustration work 01">
+        </div>
+        <div class="art-meta">
+          <div class="art-title">学内イラストコンテスト / 3位</div>
+          <div class="art-cat">Illustration</div>
+        </div>
+      </article>
+
+      <article class="art-card reveal d1">
+        <div class="art-media">
+          <img src="images/illustration-02.jpg" alt="Illustration work 02">
+        </div>
+        <div class="art-meta">
+          <div class="art-title">ファンアート</div>
+          <div class="art-cat">Illustration</div>
+        </div>
+      </article>
+
+      <article class="art-card reveal d1">
+        <div class="art-media">
+          <img src="images/illustration-03.jpg" alt="Illustration work 03">
+        </div>
+        <div class="art-meta">
+          <div class="art-title">ファンアート</div>
+          <div class="art-cat">Illustration</div>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  </div>
+  </section>
+  <section class="other-section" id="otherSection">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">01.7 — Other Works</div>
+        <h2 class="sec-title">Other<br /><em>Projects</em></h2>
+      </div>
+
+      <div class="section-header-actions">
+        <button class="section-back-btn" id="otherBackBtn" type="button">Back to All</button>
+      </div>
+    </div>
+
+    <div class="other-grid">
+      <article class="other-card reveal">
+        <div class="other-media">
+          <img src="images/other-video.jpg" alt="Award-Winning Video thumbnail">
+        </div>
+        <div class="other-body">
+          <div class="other-num">01</div>
+          <div class="other-title">天草市クリエイター<br>誘致活動用PVコンペ</div>
+          <div class="other-cat">動画 / 優秀賞</div>
+          <p class="other-text">
+            優秀賞を受賞した映像作品です。 <br>構成や表現を工夫し、伝わりやすい映像を意識して制作しました。 </p>
+          <a class="other-link" href="https://www.youtube.com/watch?v=whuEye9H2_U" target="_blank"
+            rel="noopener noreferrer">
+            <span class="other-link-text">作品を見る</span>
+            <span class="other-link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="other-card reveal d1">
+        <div class="other-media">
+          <img src="images/other-cg.jpg" alt="CG work image">
+        </div>
+        <div class="other-body">
+          <div class="other-num">02</div>
+          <div class="other-title">テクノセミナー作品</div><br>
+          <div class="other-cat">CG / NSX</div>
+          <p class="other-text">
+            質感や立体感、車の魅力が伝わるよう意識して制作したCG作品です。 </p>
+        </div>
+      </article>
+
+      <article class="other-card reveal d2">
+        <div class="other-media">
+          <img src="images/other-figure.jpg" alt="Figure contest work image">
+        </div>
+        <div class="other-body">
+          <div class="other-num">03</div>
+          <div class="other-title">フィギュアコンクール</div><br>
+          <div class="other-cat">写真・合成 / 学内コンテスト準グランプリ</div>
+          <p class="other-text">
+            学内フィギュアコンクールに向けて制作した作品です。 <br>造形や細部の表現にこだわって仕上げました。 </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-head reveal">
+      <div class="eyebrow">02 — About</div>
+      <h2 class="sec-title">Profile<br /><em>Overview</em></h2>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-copy reveal">
+        <p class="about-intro">
+          熊本で映像とデザイン制作を学んでいる学生の田中希空です。<br>
+          写真やビジュアル表現への興味を活かしながら、<br>
+          見る人に伝わるデザインを意識して制作をしています。
+          <br><br>
+          このポートフォリオサイトでは、webサイト制作、ビジュアルデザイン、写真、イラストなど、<br>
+          これまで取り組んできた作品をまとめています。<br>
+          まだ経験は浅いですが、制作を通して学びを深めながら、<br>
+          より良い表現を形にできるように取り組んでいます。
+        </p>
+
+        <div class="about-info-grid">
+          <div class="info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">田中 希空</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Dream</div>
+            <div class="info-value">デザイナー / フォトグラファー / マーケティング</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">From</div>
+            <div class="info-value">熊本県菊池市</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Interests</div>
+            <div class="info-value">音楽 / イラスト / カフェ / ドライブ / カメラ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="about-glow"></div>
+        <div class="about-frame back"></div>
+
+        <div class="about-photo">
+          <img src="images/profile-photo.jpg" alt="Portrait of Kisora" />
+        </div>
+
+        <div class="about-frame front"></div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-section" id="skills">
+    <div class="reveal">
+      <div class="eyebrow">03 — Skills</div>
+      <h2 class="sec-title">Tech<em>Stack</em></h2>
+    </div>
+
+    <p class="section-intro">
+      <br>
+      デザインから実装まで、一つひとつ学びながら制作しています。<br>
+      HTML / CSS / JavaScript を使った基本的なWebサイト制作に加え、 <br>
+      Figma・Illustrator・Photoshopを用いたビジュアル制作にも取り組んでいます。
+    </p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-name">Figma</div>
+        <div class="skill-period">2 months experience</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="50"></div>
+        </div>
+        <div class="skill-note">Webサイトのデザイン</div>
+      </div>
+
+      <div class="skill-card reveal d1">
+        <div class="skill-name">Illustrator</div>
+        <div class="skill-period">3 months experience</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="30"></div>
+        </div>
+        <div class="skill-note">ロゴ・イラスト制作</div>
+      </div>
+
+      <div class="skill-card reveal d2">
+        <div class="skill-name">Photoshop</div>
+        <div class="skill-period">3 months experience</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="40"></div>
+        </div>
+        <div class="skill-note">写真加工・バナー制作</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-name">HTML</div>
+        <div class="skill-period">2 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="30"></div>
+        </div>
+        <div class="skill-note">サイトの構造づくり</div>
+      </div>
+
+      <div class="skill-card reveal d1">
+        <div class="skill-name">CSS</div>
+        <div class="skill-period">2 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="30"></div>
+        </div>
+        <div class="skill-note">サイトのスタイリング</div>
+      </div>
+
+      <div class="skill-card reveal d2">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-period">0.5 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="5"></div>
+        </div>
+        <div class="skill-note">動きの実装（学習中）</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-name">procreate</div>
+        <div class="skill-period">6 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="35"></div>
+        </div>
+        <div class="skill-note">デジタルイラスト</div>
+      </div>
+
+      <div class="skill-card reveal d1">
+        <div class="skill-name">AI</div>
+        <div class="skill-period">3 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="25"></div>
+        </div>
+        <div class="skill-note">ChatGPT ・  1年</div>
+        <div class="skill-note">Gemini ・  1年</div>
+        <div class="skill-note">Genspark ・  1年</div>
+        <div class="skill-note">Claude Code ・  2ケ月</div>
+      </div>
+
+      <div class="skill-card reveal d2">
+        <div class="skill-name">Nikon D5600</div>
+        <div class="skill-period">6 months · Learning</div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-w="65"></div>
+        </div>
+        <div class="skill-note">写真・動画撮影</div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="qualifications">
+    <div class="reveal">
+      <div class="eyebrow">04 — Credentials</div>
+      <h2 class="sec-title">Basic<br /><em>Qualifications</em></h2>
+    </div>
+    <p class="section-intro">
+      <br>
+      基礎的な資格や学習経験を通して、
+      表現だけでなく着実に力を身につけています。
+    </p>
+    <div class="qual-list">
+      <div class="qual-item reveal">
+        <div class="qual-num">01</div>
+        <div>
+          <div class="qual-org">全国商業高等学校協会主催</div>
+          <div class="qual-text">ビジネス文書実務検定試験　１級</div>
+        </div>
+        <div class="qual-badge">取得</div>
+      </div>
+
+      <div class="qual-item reveal d1">
+        <div class="qual-num">02</div>
+        <div>
+          <div class="qual-org">全国商業高等学校協会主催</div>
+          <div class="qual-text">情報処理検定試験　１級</div>
+        </div>
+        <div class="qual-badge">取得</div>
+      </div>
+
+      <div class="qual-item reveal d2">
+        <div class="qual-num">03</div>
+        <div>
+          <div class="qual-org">全国商業高等学校協会主催</div>
+          <div class="qual-text">簿記実務検定試験　１級</div>
+        </div>
+        <div class="qual-badge">取得</div>
+      </div>
+
+      <div class="qual-item reveal d3">
+        <div class="qual-num">04</div>
+        <div>
+          <div class="qual-org">全国商業高等学校協会主催</div>
+          <div class="qual-text">商業経済検定試験　1級</div>
+        </div>
+        <div class="qual-badge">取得</div>
+      </div>
+
+      <div class="qual-item reveal d4">
+        <div class="qual-num">05</div>
+        <div>
+          <div class="qual-org">全国商業高等学校協会主催</div>
+          <div class="qual-text">ビジネス計算実務検定試験　１級</div>
+        </div>
+        <div class="qual-badge">取得</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <div class="footer-brand">TANAKA KISORA<span>portfolio</span></div>
+      <p class="footer-tagline">写真やデザインを通して、自分らしい表現を形にしています。<br />
+        Student in Kumamoto, Japan</p>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:ksj2516tanaka@ktec.ac.jp">Email</a></li>
+        <li><a href="https://www.instagram.com/w.o.film/">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Tanaka Kisora. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+
+    <div class="footer-line"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
